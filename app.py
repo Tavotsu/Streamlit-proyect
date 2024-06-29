@@ -56,7 +56,7 @@ st.markdown("<hr>", unsafe_allow_html=True)
 button_style = """
 <style>
 .button {
-  background-color:#4CAF50;
+  background-color:#F99F1E;
   border: none;
   color: white;
   padding: 15px 32px;
