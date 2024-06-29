@@ -53,13 +53,35 @@ st.markdown("<p style='text-align: center;'>En Duoc UC, te invitamos a vivir una
 st.markdown("<hr>", unsafe_allow_html=True)
 
 # Links
-st.markdown("<p style='text-align: center;'>[Ramas Deportivas](https://www.duoc.cl/ramas-deportivas/)</p>", unsafe_allow_html=True)
-st.markdown("<p style='text-align: center;'>[Selecciones](https://www.duoc.cl/selecciones/)</p>", unsafe_allow_html=True)
-st.markdown("<p style='text-align: center;'>[Juegos de Invierno](https://www.duoc.cl/juegos-de-invierno/)</p>", unsafe_allow_html=True)
-st.markdown("<p style='text-align: center;'>[Juegos Olímpicos](https://www.duoc.cl/juegos-olimpicos/)</p>", unsafe_allow_html=True)
-st.markdown("<p style='text-align: center;'>[Coordinadores por Sede](https://www.duoc.cl/coordinadores-por-sede/)</p>", unsafe_allow_html=True)
-st.markdown("<p style='text-align: center;'>[Noticias](https://www.duoc.cl/noticias/)</p>", unsafe_allow_html=True)
-st.markdown("<p style='text-align: center;'>[Galerías](https://www.duoc.cl/galerias/)</p>", unsafe_allow_html=True)
+st.write("")
+
+col1, col2, col3 = st.columns(3)
+
+with col1:
+    st.button("Ramas Deportivas", style="primary", help="Ir a Ramas Deportivas", on_click=lambda: webbrowser.open("https://www.duoc.cl/ramas-deportivas/"))
+
+with col2:
+    st.button("Selecciones", style="primary", help="Ir a Selecciones", on_click=lambda: webbrowser.open("https://www.duoc.cl/selecciones/"))
+
+with col3:
+    st.button("Juegos de Invierno", style="primary", help="Ir a Juegos de Invierno", on_click=lambda: webbrowser.open("https://www.duoc.cl/juegos-de-invierno/"))
+
+st.write("")
+
+col1, col2, col3 = st.columns(3)
+
+with col1:
+    st.button("Juegos Olímpicos", style="primary", help="Ir a Juegos Olímpicos", on_click=lambda: webbrowser.open("https://www.duoc.cl/juegos-olimpicos/"))
+
+with col2:
+    st.button("Coordinadores por Sede", style="primary", help="Ir a Coordinadores por Sede", on_click=lambda: webbrowser.open("https://www.duoc.cl/coordinadores-por-sede/"))
+
+with col3:
+    st.button("Noticias", style="primary", help="Ir a Noticias", on_click=lambda: webbrowser.open("https://www.duoc.cl/noticias/"))
+
+st.write("")
+
+st.button("Galerías", style="primary", help="Ir a Galerías", on_click=lambda: webbrowser.open("https://www.duoc.cl/galerias/"))
 
 # Footer copyright
 st.markdown("<p style='text-align: center;'>© 2023 Duoc UC. Todos los derechos reservados.</p>", unsafe_allow_html=True)
