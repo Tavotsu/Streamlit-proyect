@@ -11,7 +11,7 @@ st.markdown("<h1 style='text-align: center; color: #f29820;'>Duoc UC</h1>", unsa
 st.markdown("<p style='text-align: center;'>Universidad de Artes, Ciencias y Tecnologías</p>", unsafe_allow_html=True)
 
 # Navigation bar
-st.sidebar.markdown("<h3 style='text-align: center;'>Navigation</h3>", unsafe_allow_html=True)
+st.sidebar.markdown("<h3 style='text-align: center;'>Menu</h3>", unsafe_allow_html=True)
 st.sidebar.write("[Alumnos](https://www.duoc.cl/alumnos/)", unsafe_allow_html=True)
 st.sidebar.write("[Titulados](https://www.duoc.cl/titulados/)", unsafe_allow_html=True)
 st.sidebar.write("[Docentes](https://www.duoc.cl/docentes/)", unsafe_allow_html=True)
