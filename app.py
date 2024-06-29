@@ -53,35 +53,33 @@ st.markdown("<p style='text-align: center;'>En Duoc UC, te invitamos a vivir una
 st.markdown("<hr>", unsafe_allow_html=True)
 
 # Links
-st.write("")
+button_style = """
+<style>
+.button {
+  background-color:#4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+"""
 
-col1, col2, col3 = st.columns(3)
+st.markdown(button_style, unsafe_allow_html=True)
 
-with col1:
-    st.button("Ramas Deportivas", style="primary", help="Ir a Ramas Deportivas", on_click=lambda: webbrowser.open("https://www.duoc.cl/ramas-deportivas/"))
-
-with col2:
-    st.button("Selecciones", style="primary", help="Ir a Selecciones", on_click=lambda: webbrowser.open("https://www.duoc.cl/selecciones/"))
-
-with col3:
-    st.button("Juegos de Invierno", style="primary", help="Ir a Juegos de Invierno", on_click=lambda: webbrowser.open("https://www.duoc.cl/juegos-de-invierno/"))
-
-st.write("")
-
-col1, col2, col3 = st.columns(3)
-
-with col1:
-    st.button("Juegos Olímpicos", style="primary", help="Ir a Juegos Olímpicos", on_click=lambda: webbrowser.open("https://www.duoc.cl/juegos-olimpicos/"))
-
-with col2:
-    st.button("Coordinadores por Sede", style="primary", help="Ir a Coordinadores por Sede", on_click=lambda: webbrowser.open("https://www.duoc.cl/coordinadores-por-sede/"))
-
-with col3:
-    st.button("Noticias", style="primary", help="Ir a Noticias", on_click=lambda: webbrowser.open("https://www.duoc.cl/noticias/"))
-
-st.write("")
-
-st.button("Galerías", style="primary", help="Ir a Galerías", on_click=lambda: webbrowser.open("https://www.duoc.cl/galerias/"))
-
+st.markdown("""
+<a href="https://www.duoc.cl/ramas-deportivas/" class="button">Ramas Deportivas</a>
+<a href="https://www.duoc.cl/selecciones/" class="button">Selecciones</a>
+<a href="https://www.duoc.cl/juegos-de-invierno/" class="button">Juegos de Invierno</a>
+<a href="https://www.duoc.cl/juegos-olimpicos/" class="button">Juegos Olímpicos</a>
+<a href="https://www.duoc.cl/coordinadores-por-sede/" class="button">Coordinadores por Sede</a>
+<a href="https://www.duoc.cl/noticias/" class="button">Noticias</a>
+<a href="https://www.duoc.cl/galerias/" class="button">Galerías</a>
+""", unsafe_allow_html=True)
 # Footer copyright
 st.markdown("<p style='text-align: center;'>© 2023 Duoc UC. Todos los derechos reservados.</p>", unsafe_allow_html=True)
