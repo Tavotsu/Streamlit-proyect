@@ -35,7 +35,7 @@ st.sidebar.write("[Admisión](https://www.duoc.cl/admision/)", unsafe_allow_html
 
 # Main content
 # Image 
-st.image("https://www.duoc.cl/wp-content/uploads/2023/02/duoc-uc-deportes.jpg", caption="Deportes Duoc UC")
+st.image("https://www.duoc.cl/wp-content/uploads/2020/06/natacion-2-960x600.jpg", caption="Deportes Duoc UC")
 
 # Title 
 st.markdown("<h2 style='text-align: center; color: #f29820;'>Deportes</h2>", unsafe_allow_html=True)
