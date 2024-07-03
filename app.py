@@ -6,11 +6,11 @@ st.set_page_config(
     layout="wide",
 )
 
-# Header 
+#Titulo
 st.markdown("<h1 style='text-align: center; color: #f29820;'>Duoc UC</h1>", unsafe_allow_html=True)
 st.markdown("<p style='text-align: center;'>Universidad de Artes, Ciencias y Tecnologías</p>", unsafe_allow_html=True)
 
-# Navigation bar
+#Barra de opciones
 st.sidebar.markdown("<h3 style='text-align: center;'>Menu</h3>", unsafe_allow_html=True)
 st.sidebar.write("[Alumnos](https://www.duoc.cl/alumnos/)", unsafe_allow_html=True)
 st.sidebar.write("[Titulados](https://www.duoc.cl/titulados/)", unsafe_allow_html=True)
@@ -33,23 +33,23 @@ st.sidebar.write("[Nosotros](https://www.duoc.cl/nosotros/)", unsafe_allow_html=
 st.sidebar.write("[Admisión](https://www.duoc.cl/admision/)", unsafe_allow_html=True)
 
 
-# Main content
-# Image 
+# Main
+# Foto
 st.image("https://www.duoc.cl/wp-content/uploads/2020/06/natacion-2-960x600.jpg", caption="Deportes Duoc UC")
 
-# Title 
+# Titulo
 st.markdown("<h2 style='text-align: center; color: #f29820;'>Deportes</h2>", unsafe_allow_html=True)
 
-# Navigation links
+# Link de la pagina de deportes
 st.markdown("<p style='text-align: center;'>Inicio / Vida Estudiantil / Deportes</p>", unsafe_allow_html=True)
 
-# Main sections
+# Seccion principal
 st.markdown("<h3 style='text-align: center; color: #f29820;'>Nuestra oferta deportiva</h3>", unsafe_allow_html=True)
 
-# Content
+# Descripcion del contenido
 st.markdown("<p style='text-align: center;'>En Duoc UC, te invitamos a vivir una experiencia deportiva única, con una oferta completa que te permitirá desarrollar tus habilidades, disfrutar del deporte y fortalecer tu salud. Te invitamos a explorar nuestras ramas deportivas, selecciones, juegos de invierno, juegos olímpicos y coordinadores por sede. ¡Anímate a ser parte de nuestro equipo!</p>", unsafe_allow_html=True)
 
-# Footer
+# Pie de pagina
 st.markdown("<hr>", unsafe_allow_html=True)
 
 # Links
@@ -81,5 +81,5 @@ st.markdown("""
 <a href="https://www.duoc.cl/noticias/" class="button">Noticias</a>
 <a href="https://www.duoc.cl/galerias/" class="button">Galerías</a>
 """, unsafe_allow_html=True)
-# Footer copyright
+# Pie de pagina para copyright
 st.markdown("<p style='text-align: center;'>© 2023 Duoc UC. Todos los derechos reservados.</p>", unsafe_allow_html=True)
